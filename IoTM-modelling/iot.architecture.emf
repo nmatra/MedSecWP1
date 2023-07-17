@@ -1,0 +1,466 @@
+@namespace(uri="https://org.cea.architecture/iot", prefix="iot")
+
+package iot;
+   
+class IotDevice {
+	attr String identifier;
+	val CommunicationProtocol connectivity;
+	attr String topic;
+//	attr String latitude;
+//	attr String longitude;
+	ref Region[*] regions;
+	ref EdgeNode gateway;
+	//
+	val Message[*] messages;
+	val Port[*] ports;
+}
+
+class Actuator extends IotDevice {
+	ref ActuatorType[1] type; 
+}
+
+class ActuatorType {
+	attr String name;
+}
+
+class Sensor extends IotDevice {
+    attr Float threshold;
+    attr String unit;
+	ref SensorType[1] type;
+}
+
+class SensorType {
+	attr String name;
+}
+
+abstract class CommunicationProtocol {	
+}
+
+class Ethernet extends CommunicationProtocol{
+	
+}
+class Serial extends CommunicationProtocol{
+	
+}
+class Wifi extends CommunicationProtocol{
+	
+}
+class Bluetooth extends CommunicationProtocol{
+	
+}
+class Zigbee extends CommunicationProtocol{
+}
+
+class KNX extends CommunicationProtocol{	
+}
+
+class LoRa extends CommunicationProtocol{	
+}
+
+class SixLoWPAN extends CommunicationProtocol{
+}
+
+class ZWave extends CommunicationProtocol{
+}
+
+class EnOcean extends CommunicationProtocol{	
+}
+
+class RFID extends CommunicationProtocol{	
+}
+
+class Region {
+	attr String name;
+	ref Region[*] subregion;
+	ref EdgeNode[*]#regions nodes;
+}
+
+class Node {
+	attr String name;
+	attr String ipAddress;
+	attr String hostName;
+	attr int cpuCores;
+	attr int memory;
+	attr int storage;
+	attr Processor processor;
+	ref Node[*] linkedNodes;
+	val RootState behaviour;
+	val Asset [*] assets;
+//	val Container[*] containers;
+}
+
+class Cluster {
+	attr String name;
+	ref Node[*] master;
+	ref Node[*] workers;
+}
+
+class EdgeNode extends Node {
+	ref IotDevice[*]#region devices;
+	ref Region[*]#device regions;
+}
+
+class FogNode extends Node{
+    ref Region[*] regions;
+}
+
+class CloudNode extends Node{
+}
+
+enum Processor{	
+	x86=1;
+	arm =2;
+	x64 =3;
+}
+
+//class Container {
+//	attr String name;
+//	attr int internalPort;
+//	attr int externalPort;
+//	attr int cpuLimit;
+//	attr int memoryLimit;
+//	ref Service[*] service;
+//}
+
+abstract class Asset {
+  attr String key;
+  attr String missionName;
+  attr String description;
+}
+
+class Service extends Asset {
+  attr ServiceKind kind;
+//	attr int cpuRequired;
+//	attr int memoryRequired;
+//	attr String imageRepo;
+//	ref Container[1]#service container;
+}
+
+enum ServiceKind {
+  RemotePatientMonitoring;
+  InfusionPump;
+  StresssMonitoring;
+  OxigenLevelMonitoring;
+  HeartRateMonitory;
+  GlucoseMonitoryng; 	
+  ThermometersMonitoring;
+  DataStorage;
+  DataAnalysis;
+  EmergencyResponse;
+  VoiceBasedHealthAssitants;
+  SurgicalNavigation;
+  MedicalImageAnalysis;
+  IoMTCybersecurity;  	
+}
+
+class Information extends Asset {
+   attr InformationKind kind;
+   attr String location;
+   attr String record; 	
+}
+
+enum InformationKind {
+	PatientPersonalData;
+	PatientHealthRecords;
+	RealTimePatientData;
+	InsuranceAndBilling;
+	DeviceSensorData;
+	StaffUserData;
+	ThirdPartyData;	
+}
+
+class IntangileAsset extends Asset {
+	attr IntangibleAssetKind kind;	
+}
+
+enum IntangibleAssetKind {
+	HospitalReputation;
+	IoMTBrandEquity;
+	PatientSatisfaction;
+	DataPrivacySecurityTrust;
+	IntellectualProperty;
+	Licences;
+}
+
+class RootState extends AnnotatedElement {
+	ref State initial;
+	attr boolean history;
+	val State[*] substate;
+}
+
+
+class FinalState extends State {
+}
+
+class State extends NamedElement, AnnotatedElement {
+	val Property[*] properties;
+	val Action entry;
+	val Action exit;
+	val InternalTransition[*] internal;
+	val Transition[*] outgoing;
+}
+
+class Event extends NamedElement {
+}
+
+
+class Handler extends NamedElement, AnnotatedElement {
+	val Event event;
+	val Expression guard;
+	val Action action;
+}
+
+class Transition extends Handler {
+	ref State target;
+}
+
+class InternalTransition extends Handler {
+}
+
+class ReceiveMessage extends Event {
+	ref Port port;
+	ref Message message;
+}
+
+class Action {
+   val Expression[*] expression;
+}
+
+class ActionBlock extends Action {
+	val Action[*] actions;
+}
+
+class ExternStatement extends Action {
+	attr String statement;
+	val Expression[*] segments;
+}
+
+class LocalVariable extends Variable, Action {
+	attr boolean ~readonly;
+	val Expression init;
+}
+
+class SendAction extends Action {
+	ref Port port;
+	ref Message message;
+	val Expression[*] parameters;
+}
+
+class VariableAssignment extends Action {
+	ref Variable property;
+	val Expression index;
+	val Expression expression;
+}
+
+class Increment extends Action {
+	ref Variable var;
+}
+
+class Decrement extends Action {
+	ref Variable var;
+}
+
+class ForAction extends Action {
+	val Parameter variable;
+	val Parameter index;
+	val PropertyReference array;
+	val Action action;
+}
+
+class LoopAction extends Action {
+	val Expression condition;
+	val Action action;
+}
+
+class ConditionalAction extends Action {
+	val Expression condition;
+	val Action action;
+	val Action elseAction;
+}
+
+class ReturnAction extends Action {
+	val Expression exp;
+}
+
+class PrintAction extends Action {
+	attr boolean line;
+	val Expression[*] msg;
+}
+
+class ErrorAction extends Action {
+	attr boolean line;
+	val Expression[*] msg;
+}
+
+
+
+class FunctionCallStatement extends Action {
+	ref Function function;
+	val Expression[*] parameters;
+}
+
+class Expression {
+}
+
+class ExternExpression extends Expression {
+	attr String expression;
+	val Expression[*] segments;
+}
+
+class Literal extends Expression {
+   attr String value;
+}
+
+class PropertyReference extends Expression {
+	ref Variable property;
+}
+
+class EventReference extends Expression {
+	ref Event receiveMsg;
+	ref Parameter parameter;
+}
+
+class FunctionCallExpression extends Expression {
+	ref Function function;
+	val Expression[*] parameters;
+}
+
+class Configuration extends NamedElement, AnnotatedElement {
+	val Instance[*] instances;
+	val AbstractConnector[*] connectors;
+	val ConfigPropertyAssign[*] propassigns;
+}
+
+class Instance extends NamedElement, AnnotatedElement {
+	ref IotDevice type;
+}
+
+
+class ConfigPropertyAssign {
+	ref Instance instance;
+	ref Property property;
+	val Expression index;
+	val Expression init;
+	val PlatformAnnotation[*] annotations;
+}
+
+class AbstractConnector extends NamedElement, AnnotatedElement {
+}
+
+class NamedElement {
+	attr String name;
+}
+
+class AnnotatedElement {
+	val PlatformAnnotation[*] annotations;
+}
+
+class Variable extends NamedElement, AnnotatedElement {
+	val TypeRef typeRef;
+}
+
+class TypeRef {
+	ref Type type;
+	attr boolean isArray;
+	val Expression cardinality;
+}
+
+class Property extends Variable {
+	attr boolean ~readonly;
+	val Expression init;
+}
+
+class Function extends NamedElement, AnnotatedElement {
+	val Parameter[*] parameters;
+	val TypeRef typeRef;
+	val Action body;
+	attr boolean ~abstract;
+}
+
+
+class Connector extends AbstractConnector {
+	ref Instance cli;
+	ref RequiredPort required;
+	ref Instance srv;
+	ref ProvidedPort provided;
+}
+
+class Port extends NamedElement, AnnotatedElement {
+	!unique ref Message[*] sends;
+	!unique ref Message[*] receives;
+}
+
+class RequiredPort extends Port {
+	attr boolean optional;
+}
+
+class ProvidedPort extends Port {
+}
+
+class InternalPort extends Port {
+}
+
+class ExternalConnector extends AbstractConnector {
+	ref Instance inst;
+	ref Port port;
+}
+
+class BinaryExpression extends Expression {
+    attr String operator;
+	val Expression lhs;
+	val Expression rhs;
+}
+
+
+
+class UnaryExpression extends Expression {
+	val Expression term;
+}
+
+//class ArrayIndex extends Expression {
+//	val Expression array;
+//	val Expression index;
+//}
+//ACTIONS:
+//left as abstract, because it may change the meaning depending on the goal
+///For instance, in ThingML actions can be specified as state machines
+// In SOM work, actions are self-configuration rules
+
+//abstract class Action {		
+//}
+
+//SECURITY 
+//needs to be expanded ? There are security modeling in the FHIR standard, but 
+//we need to decided if they are adapted and included where
+//abstract class SecuredResource extends AnnotatedElement {	
+
+//}
+
+//BEGIN
+//copied/adapted from ThingML
+class PlatformAnnotation {
+	attr String name;
+	attr String value;
+}
+
+class Message {
+    attr String name;
+    attr String value;
+	val Parameter[*] parameters;
+}
+
+class Type{
+	
+}
+
+class Parameter extends NamedElement {	
+   	attr String Type; //should be changed?
+}
+
+
+
+//END ThingML adaptation
+
+	
+
+
