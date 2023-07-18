@@ -40,10 +40,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="ZWave" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="EnOcean" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="RFID" eSuperTypes="#//CommunicationProtocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NBIoT" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="Region">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subregion" upperBound="-1"
         eType="#//Region"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
+        eType="#//Node" eOpposite="#//Node/regions"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Node">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -59,8 +62,15 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="assets" upperBound="-1"
         eType="#//Asset" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="regions" upperBound="-1"
-        eType="#//Region"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regions" eType="#//Region"
+        eOpposite="#//Region/nodes"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cluster">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="master" upperBound="-1"
+        eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workers" upperBound="-1"
+        eType="#//Node"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EdgeNode" eSuperTypes="#//Node">
     <eStructuralFeatures xsi:type="ecore:EReference" name="devices" upperBound="-1"

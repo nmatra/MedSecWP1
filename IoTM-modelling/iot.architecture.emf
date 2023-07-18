@@ -68,6 +68,9 @@ class EnOcean extends CommunicationProtocol{
 
 class RFID extends CommunicationProtocol{	
 }
+class NBIoT extends CommunicationProtocol {
+
+}
 
 class Region {
 	attr String name;

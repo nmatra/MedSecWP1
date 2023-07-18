@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="__VZKYM8fEe2H54tJoT2HLg" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_yHfsEM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHfsEs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsE88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsFM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsFc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsFs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsF88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsGM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsGc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsGs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsG88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//IotArchitecture"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHfsEc8nEe2H54tJoT2HLg" x="216" y="608"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHfsHM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHfsHs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsH88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsIM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsIc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsIs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsI88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsJM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsJc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsJs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsJ88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//IotDevice"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHfsHc8nEe2H54tJoT2HLg" x="192" y="368"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHfsKM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHfsKs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsK88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsLM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsLc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsLs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsL88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsMM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsMc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsMs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsM88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Actuator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHfsKc8nEe2H54tJoT2HLg" x="28" y="164"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHfsNM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHfsNs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsN88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsOM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsOc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsOs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsO88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsPM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHfsPc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHfsPs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHfsP88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//ActuatorType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHfsNc8nEe2H54tJoT2HLg" x="4" y="380"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTIM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTIs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTI88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTJM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTJc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTJs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTJ88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTKM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTKc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTKs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTK88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Sensor"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTIc8nEe2H54tJoT2HLg" x="448" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTLM8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTLs8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTL88nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTMM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTMc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTMs8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTM88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTNM8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTNc8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTNs8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTN88nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//SensorType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTLc8nEe2H54tJoT2HLg" x="416" y="200"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTOM8nEe2H54tJoT2HLg" type="2005" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTOs8nEe2H54tJoT2HLg" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTO88nEe2H54tJoT2HLg" type="7011">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTPM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTPc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTPs8nEe2H54tJoT2HLg" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTP88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTQM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="iot.architecture.ecore#//Connectivity"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTOc8nEe2H54tJoT2HLg" x="312" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTQc8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTQ88nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTRM8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTRc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTRs8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTR88nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTSM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTSc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTSs8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTS88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTTM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Region"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTQs8nEe2H54tJoT2HLg" x="540" y="400"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTTc8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTT88nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTUM8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTUc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTUs8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTU88nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTVM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTVc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTVs8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTV88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTWM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Node"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTTs8nEe2H54tJoT2HLg" x="940" y="200"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTWc8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTW88nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTXM8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTXc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTXs8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTX88nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTYM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTYc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTYs8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTY88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTZM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//EdgeNode"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTWs8nEe2H54tJoT2HLg" x="556" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTZc8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTZ88nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTaM8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTac8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTas8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTa88nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTbM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTbc8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTbs8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTb88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTcM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//FogNode"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTZs8nEe2H54tJoT2HLg" x="976" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTcc8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTc88nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTdM8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTdc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTds8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTd88nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTeM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTec8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTes8nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTe88nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTfM8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//CloudNode"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTcs8nEe2H54tJoT2HLg" x="764" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTfc8nEe2H54tJoT2HLg" type="2005" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTf88nEe2H54tJoT2HLg" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTgM8nEe2H54tJoT2HLg" type="7011">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTgc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTgs8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTg88nEe2H54tJoT2HLg" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgThM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgThc8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="iot.architecture.ecore#//Processor"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTfs8nEe2H54tJoT2HLg" x="1096" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgThs8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTiM8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTic8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTis8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTi88nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTjM8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTjc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTjs8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTj88nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTkM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTkc8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Container"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTh88nEe2H54tJoT2HLg" x="760" y="400"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yHgTks8nEe2H54tJoT2HLg" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yHgTlM8nEe2H54tJoT2HLg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTlc8nEe2H54tJoT2HLg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTls8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTl88nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTmM8nEe2H54tJoT2HLg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTmc8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTms8nEe2H54tJoT2HLg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yHgTm88nEe2H54tJoT2HLg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yHgTnM8nEe2H54tJoT2HLg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yHgTnc8nEe2H54tJoT2HLg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="iot.architecture.ecore#//Service"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yHgTk88nEe2H54tJoT2HLg" x="752" y="200"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="__VZKYc8fEe2H54tJoT2HLg"/>
+  <element xmi:type="ecore:EPackage" href="iot.architecture.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yH4GkM8nEe2H54tJoT2HLg" type="4003" source="_yHfsEM8nEe2H54tJoT2HLg" target="_yHfsHM8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH4Gk88nEe2H54tJoT2HLg" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH4GlM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH4Glc8nEe2H54tJoT2HLg" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH4Gls8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH4Gkc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//IotArchitecture/device"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH4Gks8nEe2H54tJoT2HLg" points="[0, 0, -48, -119]$[48, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdws8nEe2H54tJoT2HLg" id="(0.49411764705882355,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdw88nEe2H54tJoT2HLg" id="(0.3333333333333333,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH5UsM8nEe2H54tJoT2HLg" type="4002" source="_yHfsHM8nEe2H54tJoT2HLg" target="_yHgTQc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH5Us88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH5UtM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH5Utc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH5Uts8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH5Usc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//IotDevice/regions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH5Uss8nEe2H54tJoT2HLg" points="[0, 0, -284, -76]$[284, 76, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE088nEe2H54tJoT2HLg" id="(0.4965986394557823,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE1M8nEe2H54tJoT2HLg" id="(0.24468085106382978,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH57wM8nEe2H54tJoT2HLg" type="4002" source="_yHfsHM8nEe2H54tJoT2HLg" target="_yHgTWc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH57w88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH57xM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH57xc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH57xs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH57wc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//IotDevice/gateway"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH57ws8nEe2H54tJoT2HLg" points="[0, 0, -248, 119]$[237, -61, -11, 58]$[248, -119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE1c8nEe2H54tJoT2HLg" id="(0.8299319727891157,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE1s8nEe2H54tJoT2HLg" id="(0.3230769230769231,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH6i0M8nEe2H54tJoT2HLg" type="4002" source="_yHfsKM8nEe2H54tJoT2HLg" target="_yHfsNM8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH6i088nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH6i1M8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH6i1c8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH6i1s8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH6i0c8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Actuator/type"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH6i0s8nEe2H54tJoT2HLg" points="[0, 0, 0, -119]$[0, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE2c8nEe2H54tJoT2HLg" id="(0.49122807017543857,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE2s8nEe2H54tJoT2HLg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH7J4M8nEe2H54tJoT2HLg" type="4004" source="_yHfsKM8nEe2H54tJoT2HLg" target="_yHfsHM8nEe2H54tJoT2HLg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH7J4c8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH7J4s8nEe2H54tJoT2HLg" points="[0, 0, -140, -119]$[30, 58, -110, -61]$[140, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE188nEe2H54tJoT2HLg" id="(0.7368421052631579,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE2M8nEe2H54tJoT2HLg" id="(0.16326530612244897,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH7w8M8nEe2H54tJoT2HLg" type="4002" source="_yHgTIM8nEe2H54tJoT2HLg" target="_yHgTLM8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH7w888nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH7w9M8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH7w9c8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH7w9s8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH7w8c8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Sensor/type"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH7w8s8nEe2H54tJoT2HLg" points="[0, 0, 0, -119]$[0, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdys8nEe2H54tJoT2HLg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdy88nEe2H54tJoT2HLg" id="(0.6063829787234043,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH7w988nEe2H54tJoT2HLg" type="4004" source="_yHgTIM8nEe2H54tJoT2HLg" target="_yHfsHM8nEe2H54tJoT2HLg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH7w-M8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH7w-c8nEe2H54tJoT2HLg" points="[0, 0, 178, -119]$[-28, 58, 150, -61]$[-178, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdyM8nEe2H54tJoT2HLg" id="(0.24,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdyc8nEe2H54tJoT2HLg" id="(0.4965986394557823,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH8YAM8nEe2H54tJoT2HLg" type="4002" source="_yHgTQc8nEe2H54tJoT2HLg" target="_yHgTQc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH8YA88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH8YBM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH8YBc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH8YBs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH8YAc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Region/subregion"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH8YAs8nEe2H54tJoT2HLg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH8_EM8nEe2H54tJoT2HLg" type="4002" source="_yHgTQc8nEe2H54tJoT2HLg" target="_yHgTWc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH8_E88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH8_FM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH8_Fc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH8_Fs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH8_Ec8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Region/nodes"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH8_Es8nEe2H54tJoT2HLg" points="[0, 0, 12, 318]$[68, -61, 80, 257]$[68, -199, 80, 119]$[-12, -318, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE388nEe2H54tJoT2HLg" id="(0.7446808510638298,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE4M8nEe2H54tJoT2HLg" id="(0.6615384615384615,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH9mIM8nEe2H54tJoT2HLg" type="4002" source="_yHgTTc8nEe2H54tJoT2HLg" target="_yHgTTc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH9mI88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH9mJM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH9mJc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH9mJs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH9mIc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Node/linkedNodes"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH9mIs8nEe2H54tJoT2HLg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH-NMM8nEe2H54tJoT2HLg" type="4003" source="_yHgTTc8nEe2H54tJoT2HLg" target="_yHgThs8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH-NM88nEe2H54tJoT2HLg" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH-NNM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH-NNc8nEe2H54tJoT2HLg" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH-NNs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH-NMc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Node/containers"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH-NMs8nEe2H54tJoT2HLg" points="[0, 0, 160, -60]$[-160, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdwM8nEe2H54tJoT2HLg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdwc8nEe2H54tJoT2HLg" id="(0.75,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH-0QM8nEe2H54tJoT2HLg" type="4002" source="_yHgTWc8nEe2H54tJoT2HLg" target="_yHfsHM8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH-0Q88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH-0RM8nEe2H54tJoT2HLg" x="142" y="-141"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH-0Rc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH-0Rs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH-0Qc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//EdgeNode/devices"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH-0Qs8nEe2H54tJoT2HLg" points="[0, 0, 276, -284]$[0, 0, 276, -284]$[-29, 140, 247, -144]$[-276, 284, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE0c8nEe2H54tJoT2HLg" id="(0.15384615384615385,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE0s8nEe2H54tJoT2HLg" id="(0.6666666666666666,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yH_bUM8nEe2H54tJoT2HLg" type="4002" source="_yHgTWc8nEe2H54tJoT2HLg" target="_yHgTQc8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH_bU88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH_bVM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yH_bVc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yH_bVs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yH_bUc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//EdgeNode/regions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yH_bUs8nEe2H54tJoT2HLg" points="[0, 0, 0, -318]$[0, 318, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE3c8nEe2H54tJoT2HLg" id="(0.49230769230769234,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE3s8nEe2H54tJoT2HLg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yIACYM8nEe2H54tJoT2HLg" type="4004" source="_yHgTWc8nEe2H54tJoT2HLg" target="_yHgTTc8nEe2H54tJoT2HLg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yIACYc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yIACYs8nEe2H54tJoT2HLg" points="[0, 0, -362, -119]$[109, 58, -253, -61]$[362, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdzM8nEe2H54tJoT2HLg" id="(0.8307692307692308,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE0M8nEe2H54tJoT2HLg" id="(0.24603174603174602,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yIACY88nEe2H54tJoT2HLg" type="4004" source="_yHgTZc8nEe2H54tJoT2HLg" target="_yHgTTc8nEe2H54tJoT2HLg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yIACZM8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yIACZc8nEe2H54tJoT2HLg" points="[0, 0, 0, -119]$[0, 119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdxs8nEe2H54tJoT2HLg" id="(0.4915254237288136,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdx88nEe2H54tJoT2HLg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yIApcM8nEe2H54tJoT2HLg" type="4002" source="_yHgThs8nEe2H54tJoT2HLg" target="_yHgTks8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yIApc88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yIApdM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yIApdc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yIApds8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yIApcc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Container/service"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yIApcs8nEe2H54tJoT2HLg" points="[0, 0, 0, 92]$[0, -92, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE288nEe2H54tJoT2HLg" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yIOE3M8nEe2H54tJoT2HLg" id="(0.49612403100775193,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yIBQgM8nEe2H54tJoT2HLg" type="4002" source="_yHgTks8nEe2H54tJoT2HLg" target="_yHgThs8nEe2H54tJoT2HLg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yIBQg88nEe2H54tJoT2HLg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yIBQhM8nEe2H54tJoT2HLg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yIBQhc8nEe2H54tJoT2HLg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yIBQhs8nEe2H54tJoT2HLg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yIBQgc8nEe2H54tJoT2HLg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="iot.architecture.ecore#//Service/container"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yIBQgs8nEe2H54tJoT2HLg" points="[0, 0, 0, -92]$[0, 92, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdxM8nEe2H54tJoT2HLg" id="(0.49612403100775193,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yINdxc8nEe2H54tJoT2HLg" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>
