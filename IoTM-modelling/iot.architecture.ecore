@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="iot" nsURI="https://org.cea.architecture/iot" nsPrefix="iot">
+  <eClassifiers xsi:type="ecore:EClass" name="IotSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devices" upperBound="-1"
+        eType="#//IotDevice" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
+        eType="#//Node" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IotDevice">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="connectivity" eType="#//CommunicationProtocol"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="topic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviour" eType="#//RootState"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="regions" upperBound="-1"
         eType="#//Region"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gateway" eType="#//EdgeNode"/>
@@ -41,12 +49,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="EnOcean" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="RFID" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="NBIoT" eSuperTypes="#//CommunicationProtocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RAN" eSuperTypes="#//CommunicationProtocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="Region">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subregion" upperBound="-1"
         eType="#//Region"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
-        eType="#//Node" eOpposite="#//Node/regions"/>
+        eType="#//EdgeNode"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Node">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -62,8 +71,8 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="assets" upperBound="-1"
         eType="#//Asset" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="regions" eType="#//Region"
-        eOpposite="#//Region/nodes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regions" upperBound="-1"
+        eType="#//Region"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Cluster">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -72,10 +81,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="workers" upperBound="-1"
         eType="#//Node"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EdgeNode" eSuperTypes="#//Node">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="devices" upperBound="-1"
-        eType="#//IotDevice"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EdgeNode" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="FogNode" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="CloudNode" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EEnum" name="Processor">
@@ -106,6 +112,7 @@
     <eLiterals name="SurgicalNavigation" value="11"/>
     <eLiterals name="MedicalImageAnalysis" value="12"/>
     <eLiterals name="IoMTCybersecurity" value="13"/>
+    <eLiterals name="Other" value="14"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Information" eSuperTypes="#//Asset">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="#//InformationKind"/>
@@ -120,6 +127,7 @@
     <eLiterals name="DeviceSensorData" value="4"/>
     <eLiterals name="StaffUserData" value="5"/>
     <eLiterals name="ThirdPartyData" value="6"/>
+    <eLiterals name="Other" value="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IntangileAsset" eSuperTypes="#//Asset">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="#//IntangibleAssetKind"/>
@@ -131,6 +139,7 @@
     <eLiterals name="DataPrivacySecurityTrust" value="3"/>
     <eLiterals name="IntellectualProperty" value="4"/>
     <eLiterals name="Licences" value="5"/>
+    <eLiterals name="Other" value="6"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RootState" eSuperTypes="#//AnnotatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="initial" eType="#//State"/>

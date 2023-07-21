@@ -1,13 +1,19 @@
 @namespace(uri="https://org.cea.architecture/iot", prefix="iot")
 
 package iot;
-   
+
+class IotSystem {
+   val IotDevice[*] devices;
+   val Node[*] nodes;	
+}   
+
 class IotDevice {
 	attr String identifier;
 	val CommunicationProtocol connectivity;
 	attr String topic;
 //	attr String latitude;
 //	attr String longitude;
+    val RootState behaviour;
 	ref Region[*] regions;
 	ref EdgeNode gateway;
 	//
@@ -71,6 +77,9 @@ class RFID extends CommunicationProtocol{
 class NBIoT extends CommunicationProtocol {
 
 }
+class RAN extends CommunicationProtocol {
+	
+}
 
 class Region {
 	attr String name;
@@ -89,6 +98,7 @@ class Node {
 	ref Node[*] linkedNodes;
 	val RootState behaviour;
 	val Asset [*] assets;
+	ref Region[*] regions;
 //	val Container[*] containers;
 }
 
@@ -99,12 +109,9 @@ class Cluster {
 }
 
 class EdgeNode extends Node {
-	ref IotDevice[*]#region devices;
-	ref Region[*]#device regions;
 }
 
 class FogNode extends Node{
-    ref Region[*] regions;
 }
 
 class CloudNode extends Node{
@@ -153,7 +160,8 @@ enum ServiceKind {
   VoiceBasedHealthAssitants;
   SurgicalNavigation;
   MedicalImageAnalysis;
-  IoMTCybersecurity;  	
+  IoMTCybersecurity;
+  Other;  	
 }
 
 class Information extends Asset {
@@ -170,6 +178,7 @@ enum InformationKind {
 	DeviceSensorData;
 	StaffUserData;
 	ThirdPartyData;	
+	Other;
 }
 
 class IntangileAsset extends Asset {
@@ -183,6 +192,7 @@ enum IntangibleAssetKind {
 	DataPrivacySecurityTrust;
 	IntellectualProperty;
 	Licences;
+	Other;
 }
 
 class RootState extends AnnotatedElement {
@@ -294,8 +304,6 @@ class ErrorAction extends Action {
 	attr boolean line;
 	val Expression[*] msg;
 }
-
-
 
 class FunctionCallStatement extends Action {
 	ref Function function;
